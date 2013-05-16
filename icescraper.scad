@@ -41,12 +41,20 @@ module icescraper() {
         union() {
             
             // Cutaway from cube to make scoop
-            translate(v = [0,scoop_length/2,scoop_length + scoop_lip]) {
+            translate(v = [0,scoop_length/2-scoop_lip,scoop_length + scoop_lip]) {
                 rotate(a = [0,90,0]) {
                     cylinder(h = scoop_width +10, r = scoop_length, center = true);
                 }
             }
 
+            // Grooves from top of scoop
+            for(x = [-scoop_width/2*0.7,-scoop_width/2*0.35,0,scoop_width/2*0.35,scoop_width/2*0.7]) {
+                translate(v = [x,-scoop_length/2,scoop_height*1.05]) {
+                    rotate(a = [-20,0,0]) {
+                        cube( size = [scoop_width/10, scoop_width/10, scoop_width/10], center = true);
+                    }
+                }
+            }
 
         }
     }
