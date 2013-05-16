@@ -48,9 +48,9 @@ module icescraper() {
             }
 
             // Grooves from top of scoop
-            for(x = [-scoop_width/2*0.7,-scoop_width/2*0.35,0,scoop_width/2*0.35,scoop_width/2*0.7]) {
+            for(x = [-scoop_width/2 : (scoop_width/10) : scoop_width/2]) {
                 translate(v = [x,-scoop_length/2,scoop_height*1.05]) {
-                    rotate(a = [-20,0,0]) {
+                    rotate(a = [0,45,0]) {
                         cube( size = [scoop_width/10, scoop_width/10, scoop_width/10], center = true);
                     }
                 }
