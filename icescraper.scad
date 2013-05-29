@@ -1,3 +1,8 @@
+// icescraper.scad
+// Ice Scraper
+// 
+// Copyright 2013 Christopher Roberts
+
 // Global Parameters
 // chrisjrob
 
