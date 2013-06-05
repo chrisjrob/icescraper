@@ -19,8 +19,7 @@ PLA may be too brittle for this application, you may be better off with ABS.
 
 Instructions
 ------------
-
- - Edit SCAD file to your configuration
- - Slice
- - Print
+* Edit SCAD file to your configuration
+* Slice
+* Print
 
